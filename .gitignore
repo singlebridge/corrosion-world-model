@@ -1,6 +1,13 @@
-# Data, predictions, experimental artifacts and private notes
-/data/
-/datasets/
+# Simulation outputs, checkpoints, caches and working files
+/data/**
+!/data/README.md
+!/data/chained_hist/
+/data/chained_hist/**
+!/data/chained_hist/params.csv
+!/data/examples/
+/data/examples/**
+!/data/examples/h0000_field_snapshots.csv
+!/data/examples/h0000_surface_current.csv
 /results/
 /runs/
 /logs/
@@ -8,10 +15,11 @@
 /figures/
 /checkpoints/
 /cache/
+/datasets/
 /docs/
-/examples/
 /configs/
 /spec/
+/examples/
 **/*.log
 **/*.pt
 **/*.pth
@@ -20,7 +28,6 @@
 **/*.hdf5
 **/*.npz
 **/*.npy
-**/*.csv
 **/*.parquet
 **/*.feather
 **/*.mph
